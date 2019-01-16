@@ -1,5 +1,5 @@
-Drill report for /home/wduembeg/Documents/Makerbot_Evolution/Marlin_UIBOX/Marlin_UIBOX/Marlin_UIBOX.kicad_pcb
-Created on Tue 25 Dec 2018 04:41:47 PM PST
+Drill report for /home/wduembeg/Documents/Makerbot_Evolution/Relicator2 Evo/Marlin_UIBOX/Marlin_UIBOX.kicad_pcb
+Created on Tue 15 Jan 2019 04:16:58 PM PST
 
 Copper Layer Stackup:
     =============================================================
@@ -10,12 +10,13 @@ Copper Layer Stackup:
 Drill file 'Marlin_UIBOX.drl' contains
     plated through holes:
     =============================================================
-    T1  0.60mm  0.024"  (3 holes)
-    T2  0.80mm  0.031"  (8 holes)
+    T1  0.75mm  0.030"  (3 holes)
+    T2  0.80mm  0.031"  (6 holes)
     T3  1.00mm  0.039"  (21 holes)
     T4  1.02mm  0.040"  (20 holes)
+    T5  3.20mm  0.126"  (6 holes)
 
-    Total plated holes count 52
+    Total plated holes count 56
 
 
 Not plated through holes are merged with plated holes

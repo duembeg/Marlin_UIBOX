@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Marlin_UIBOX-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -19,7 +20,7 @@ U 1 1 5C1DB0B1
 P 4900 2000
 F 0 "J3" H 4979 2042 50  0000 L CNN
 F 1 "12864OLED_SPI" H 4979 1951 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x07_Pitch2.54mm" H 4900 2000 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 4900 2000 50  0001 C CNN
 F 3 "~" H 4900 2000 50  0001 C CNN
 	1    4900 2000
 	1    0    0    -1  
@@ -63,7 +64,7 @@ U 1 1 5C1DB5C8
 P 4900 3800
 F 0 "J5" H 4979 3842 50  0000 L CNN
 F 1 "ROT_ENCODER" H 4979 3751 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 4900 3800 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 4900 3800 50  0001 C CNN
 F 3 "~" H 4900 3800 50  0001 C CNN
 	1    4900 3800
 	1    0    0    -1  
@@ -71,12 +72,12 @@ $EndComp
 $Comp
 L Device:Speaker LS1
 U 1 1 5C1DB791
-P 3200 4450
-F 0 "LS1" H 3370 4446 50  0000 L CNN
-F 1 "Speaker" H 3370 4355 50  0000 L CNN
-F 2 "Buzzers_Beepers:Buzzer_12x9.5RM7.6" H 3200 4250 50  0001 C CNN
-F 3 "~" H 3190 4400 50  0001 C CNN
-	1    3200 4450
+P 3000 4250
+F 0 "LS1" H 3170 4246 50  0000 L CNN
+F 1 "Speaker" H 3170 4155 50  0000 L CNN
+F 2 "Buzzer_Beeper:Buzzer_12x9.5RM7.6" H 3000 4050 50  0001 C CNN
+F 3 "~" H 2990 4200 50  0001 C CNN
+	1    3000 4250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -85,7 +86,7 @@ U 1 1 5C1DB8B8
 P 2550 4800
 F 0 "R2" H 2620 4846 50  0000 L CNN
 F 1 "100" H 2620 4755 50  0000 L CNN
-F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2480 4800 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2480 4800 50  0001 C CNN
 F 3 "~" H 2550 4800 50  0001 C CNN
 	1    2550 4800
 	1    0    0    -1  
@@ -96,7 +97,7 @@ U 1 1 5C1DB925
 P 2000 5250
 F 0 "R1" V 2207 5250 50  0000 C CNN
 F 1 "1K" V 2116 5250 50  0000 C CNN
-F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1930 5250 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1930 5250 50  0001 C CNN
 F 3 "~" H 2000 5250 50  0001 C CNN
 	1    2000 5250
 	0    -1   -1   0   
@@ -107,7 +108,7 @@ U 1 1 5C1DBA27
 P 2450 5250
 F 0 "Q1" H 2641 5296 50  0000 L CNN
 F 1 "2N3904" H 2641 5205 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 2650 5175 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2650 5175 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 2450 5250 50  0001 L CNN
 	1    2450 5250
 	1    0    0    -1  
@@ -279,12 +280,6 @@ BT_EN1
 Text Label 3000 3050 2    50   ~ 0
 BT_EN2
 Wire Wire Line
-	3000 4450 2550 4450
-Wire Wire Line
-	3000 4550 2550 4550
-Text Label 2550 4450 0    50   ~ 0
-VCC
-Wire Wire Line
 	2550 4550 2550 4650
 Wire Wire Line
 	3000 5550 2550 5550
@@ -300,4 +295,50 @@ Text Label 1300 5250 0    50   ~ 0
 BEEPER
 Wire Wire Line
 	2550 4950 2550 5050
+Wire Wire Line
+	2350 4550 2550 4550
+Wire Wire Line
+	2750 4550 2750 4350
+Wire Wire Line
+	2750 4350 2800 4350
+Wire Wire Line
+	2750 4250 2750 4050
+Wire Wire Line
+	2750 4050 2550 4050
+Wire Wire Line
+	2750 4250 2800 4250
+Connection ~ 2550 4550
+Wire Wire Line
+	2550 4550 2750 4550
+$Comp
+L power:VCC #PWR03
+U 1 1 5C309C0B
+P 2550 4000
+F 0 "#PWR03" H 2550 3850 50  0001 C CNN
+F 1 "VCC" H 2567 4173 50  0000 C CNN
+F 2 "" H 2550 4000 50  0001 C CNN
+F 3 "" H 2550 4000 50  0001 C CNN
+	1    2550 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4000 2550 4050
+Connection ~ 2550 4050
+Wire Wire Line
+	2550 4050 2350 4050
+$Comp
+L Device:D D1
+U 1 1 5C30C238
+P 2350 4300
+F 0 "D1" V 2304 4379 50  0000 L CNN
+F 1 "D" V 2395 4379 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2350 4300 50  0001 C CNN
+F 3 "~" H 2350 4300 50  0001 C CNN
+	1    2350 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 4450 2350 4550
+Wire Wire Line
+	2350 4050 2350 4150
 $EndSCHEMATC

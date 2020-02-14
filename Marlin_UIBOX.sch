@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:Marlin_UIBOX-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -341,4 +340,43 @@ Wire Wire Line
 	2350 4450 2350 4550
 Wire Wire Line
 	2350 4050 2350 4150
+$Comp
+L Connector_Generic:Conn_01x07 J6
+U 1 1 5E46BFFF
+P 6100 2950
+F 0 "J6" H 6180 2992 50  0000 L CNN
+F 1 "SD_CARD" H 6180 2901 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x07_Pitch2.54mm" H 6100 2950 50  0001 C CNN
+F 3 "~" H 6100 2950 50  0001 C CNN
+	1    6100 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2750 5450 2750
+Text Label 5450 3050 0    50   ~ 0
+SCK
+Text Label 5450 2950 0    50   ~ 0
+MOSI
+Text Label 5450 2650 0    50   ~ 0
+GND
+Text Label 5450 2750 0    50   ~ 0
+VCC
+Text Label 5450 2850 0    50   ~ 0
+MISO
+Text Label 5450 3150 0    50   ~ 0
+SD_SS
+Text Label 5450 3250 0    50   ~ 0
+SD_DET
+Wire Wire Line
+	5900 2650 5450 2650
+Wire Wire Line
+	5900 2850 5450 2850
+Wire Wire Line
+	5900 2950 5450 2950
+Wire Wire Line
+	5900 3050 5450 3050
+Wire Wire Line
+	5900 3150 5450 3150
+Wire Wire Line
+	5900 3250 5450 3250
 $EndSCHEMATC

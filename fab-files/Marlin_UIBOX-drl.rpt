@@ -1,5 +1,5 @@
 Drill report for /home/wduembeg/Documents/Makerbot_Evolution/Marlin_UIBOX/Marlin_UIBOX.kicad_pcb
-Created on Wed 16 Jan 2019 04:20:43 AM PST
+Created on Tue 18 Feb 2020 09:57:12 PM PST
 
 Copper Layer Stackup:
     =============================================================
@@ -12,10 +12,10 @@ Drill file 'Marlin_UIBOX.drl' contains
     =============================================================
     T1  0.75mm  0.030"  (3 holes)
     T2  0.80mm  0.031"  (6 holes)
-    T3  1.00mm  0.039"  (21 holes)
+    T3  1.00mm  0.039"  (28 holes)
     T4  1.02mm  0.040"  (20 holes)
 
-    Total plated holes count 50
+    Total plated holes count 57
 
 
 Not plated through holes are merged with plated holes
